@@ -7,8 +7,8 @@ os.makedirs('aliases')
 
 
 # Create macros
-os.system(f'doskey maker=python {vars.PROGRAM_LOCATION}/openww.py --maker')
-os.system(f'doskey viewer=python {vars.PROGRAM_LOCATION}/openww.py --viewer')
+os.system(f'doskey maker=python {vars.PROGRAM_LOCATION}/main.py --maker')
+os.system(f'doskey viewer=python {vars.PROGRAM_LOCATION}/main.py --viewer')
 
 # Save macros
 os.system('doskey /macros>C:/aliases/macros.doskey')
