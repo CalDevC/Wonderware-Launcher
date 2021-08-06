@@ -40,4 +40,4 @@ If you see your screen going black (this is because it is updating the resolutio
 
   2. The Wonderware software is taking longer than expected to launch. (The resolution is being converted back before Wonderware starts booting)
       
-      Fix: You can extend the duration of time between launching Wonderware and reverting the resolution by changing the variable 'WAIT_TIME' in the vars.py file. This number is how many seconds to wait before converting the resolution back.
+      Fix: If this is your first time launching the program try one more time before attempting this fix. If the second attempt doesn't work, you can extend the duration of time between launching Wonderware and reverting the resolution by changing the variable 'WAIT_TIME' in the vars.py file. This number is how many seconds to wait before converting the resolution back.
