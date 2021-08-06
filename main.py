@@ -9,15 +9,14 @@ parser.add_argument('--viewer', action='store_true', dest='viewer', default=Fals
 args = parser.parse_args()
 
 # Convert resolution
-ww_res = ['1280', '1024']
 os.chdir(vars.PROGRAM_LOCATION + '/QRes')
-os.system(f'QRes.exe /x:{ww_res[0]} /y:{ww_res[1]}')
+os.system(f'QRes.exe /x:{vars.WW_RES[0]} /y:{vars.WW_RES[1]}')
 
 #launch Wonderware
 os.chdir(vars.WW_PATH)
 if args.viewer: os.startfile('view.exe')
 if args.maker: os.startfile('wm.exe')
-time.sleep(2)
+time.sleep(vars.WAIT_TIME)
 
 # Restore resolution
 os.chdir(vars.PROGRAM_LOCATION + '/QRes')
