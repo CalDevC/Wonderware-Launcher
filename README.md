@@ -8,6 +8,23 @@ The real problem lies within Wonderware itself, but since there's nothing we can
 
 1. Have a second monitor that is the same resolution as the displays you are deploying to and make that display your main display before launching window maker or window viewer and then change your main display back.
 
-2. Change the resolution of your monitor to match the reolution of the screens you are deploying to.
+2. Change the resolution of your monitor to match the reolution of the screens you are deploying to and then change it back.
 
 # The Solution
+Since we can't fix the source of the issue, we'll just automate the work around. This program adds a couple macros to your cmd that are used to launch either window maker or window viewer. When used, they will automatically change the resolution of your screen to the resolution of your deployment screen, launch your selected application, and then return the resolution back to what it was originally.
+
+The macros:
+  maker  - launches window maker
+  viewer - launches window viewer
+
+# Usage Instructions
+After cloning the repo some initial set up is required, however, I've tried to make it as simple as possible. The set up steps are:
+
+  1. Open the vars.py file and fill out the required variables. Each one has a comment explaining what it is
+  2. Use the command prompt to navigate into the repo's directory and run the command 'python setup.py'
+
+That completes the initial set up. your macros should now be active and can be used from any where in the command prompt.
+
+The macros:
+  maker  - launches window maker
+  viewer - launches window viewer
